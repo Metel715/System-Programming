@@ -6,13 +6,11 @@
 
 #define ERROR_CREATE_THREAD -11
 #define ERROR_JOIN_THREAD -12
-#define SUCCESS 0
-
 
 void* kolvo(void * args){
 	printf("%d\n", pthread_self());
 //	printf("Hello from thread!\n");
-	return SUCCESS;
+	return 0;
 }
 
 pid_t gettid(void);

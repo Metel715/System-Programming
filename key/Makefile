@@ -1,10 +1,10 @@
-key: key.o key2.c 
-		gcc  key2.c -o key.o key2.o -lpthread -Wall
+key: key.o key2.o pirnt_n.h 
+		gcc  -o key key.o key2.o -lpthread -Wall
 
 key.o: key.c
-		gcc -c key.c
+		gcc -c key.c 
 
-key2.o: key2.c pirnt_n.h
+key2.o: key2.c
 		gcc -c key2.c
 
 .PHONY: clean
