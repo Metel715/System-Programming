@@ -41,7 +41,49 @@ int main(){
   Player 1;
   Player 2;
 
-  while(Index)
+  while(Index != EndOfGame){
+    switch (Index){
+      case StartNewGame{
+        Player 1 initialization();
+        Player 2 initialization();
+        Index = Player1Attack;
+      }
+      case Player1Attack{
+        int x = 0;
+        int y = 0;
 
+        Player_Sea_Battle_1.Attack(x, y);
+        int result = Player_Sea_Battle2.TestCell(x,y);
+        if ((PlayerSeaBattle2.PlayerStatus() , "LAST!!!") == 0){
+          Index = EndOfGame;
+        }
+        if ( result ==  ) Index = Player2Attack; // Промазал
+        else Index=Player1Attack; //Попал!
+
+      }
+    
+  
+
+      case Player2Attack{
+        int x = 0;
+        int y = 0;
+
+        Player_Sea_Battle_1.Attack(x, y);
+        int result = Player_Sea_Battle2.TestCell(x,y);
+        if ((PlayerSeaBattle2.PlayerStatus() , "LAST!!!") == 0){
+          Index = EndOfGame;
+        }
+        if ( result ==  ) Index = Player2Attack; // Промазал
+        else Index=Player1Attack; //Попал!
+      }    
+    }
+  
+
+  //Draw the BORT
+  clear the bort;
+
+  PlayerSeabattle1.DrawBoard();
+  PlayerSeaBattle2.DrawBoard():
+  }
   return 0;
 }
